@@ -113,6 +113,7 @@ export function SignIn({ onClose }: { onClose: () => void }) {
         }));
       }
     } catch (error) {
+      console.error('Error:', error);
       setState({
         errorMessage: 'Oops, something went wrong!',
         status: 'idle',
